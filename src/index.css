@@ -1,34 +1,32 @@
+/* [WAJIB BARIS 1] Import Font harus paling atas agar tidak di-ignore browser saat production */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* [BARIS 2] Baru import Tailwind */
 @import "tailwindcss";
 
-/* 1. PERBAIKAN: Tambahkan weight 600 (SemiBold) agar tidak tipis di HP */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
-/* 2. PERBAIKAN: Konfigurasi Theme Tailwind v4
-   Ini memberitahu Tailwind bahwa 'font-sans' (default) ADALAH Inter.
-   Tanpa ini, utility Tailwind akan menimpa font kamu. */
+/* [KONFIGURASI TEMA V4] */
+/* Ini memberitahu Tailwind bahwa class 'font-sans' (default) ADALAH Inter */
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", "sans-serif";
+  /* Jangan masukkan 'system-ui' jika Anda ingin memaksa tampilan Inter di semua HP */
 }
 
+/* [GLOBAL RESET] */
 :root {
-  /* Gunakan variabel theme yang baru kita buat */
-  font-family: var(--font-sans);
+  /* Pastikan variabel default CSS juga menggunakan Inter */
+  font-family: "Inter", sans-serif;
 
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-
-  /* 3. PERBAIKAN: Ganti ke subpixel-antialiased untuk mobile */
-  /* antialiased bikin font di HP jadi terlalu kurus */
+  /* Trik agar font tidak terlalu tipis di Mobile */
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
 }
 
-/* Memastikan elemen form juga mewarisi font yang benar */
+/* Memaksa elemen form mengikuti font */
 button,
 input,
 textarea,
@@ -36,6 +34,7 @@ select {
   font-family: inherit;
 }
 
+/* --- Style Tambahan Anda (yang lama) --- */
 a {
   font-weight: 500;
   color: #646cff;
@@ -56,6 +55,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 700; /* Pastikan tebal */
 }
 
 button {
@@ -63,8 +63,7 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
-  /* Hapus font-family inherit disini karena sudah di-handle global */
+  font-weight: 600; /* Gunakan 600 (SemiBold) agar jelas di HP */
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
