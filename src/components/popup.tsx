@@ -42,7 +42,7 @@ export default function BasicPopover() {
         }}
       >
         <div className="max-w-90 rounded-lg">
-          <img src="./src/assets/QR.png"></img>
+          <img src="public/image/QR.png"></img>
         </div>
       </Popover>
     </div>
