@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base/7  font-semibold text-blue-500">
-                Streamer No.1
+                Streamer No.1 Dunia
               </h2>
               <h1 className="mt-2 text-4xl font-bold tracking-tight text-pretty text-white sm:text-5xl">
                 NiceGuy Sound Board

@@ -1,12 +1,19 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* 1. PERBAIKAN: Tambahkan weight 600 (SemiBold) agar tidak tipis di HP */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* 2. PERBAIKAN: Konfigurasi Theme Tailwind v4
+   Ini memberitahu Tailwind bahwa 'font-sans' (default) ADALAH Inter.
+   Tanpa ini, utility Tailwind akan menimpa font kamu. */
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
 :root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    sans-serif;
+  /* Gunakan variabel theme yang baru kita buat */
+  font-family: var(--font-sans);
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,8 +21,19 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  /* 3. PERBAIKAN: Ganti ke subpixel-antialiased untuk mobile */
+  /* antialiased bikin font di HP jadi terlalu kurus */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Memastikan elemen form juga mewarisi font yang benar */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
 }
 
 a {
@@ -46,7 +64,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  /* Hapus font-family inherit disini karena sudah di-handle global */
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
