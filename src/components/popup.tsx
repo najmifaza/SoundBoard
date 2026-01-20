@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 export default function BasicPopover() {
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
-    null
+    null,
   );
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -21,11 +21,11 @@ export default function BasicPopover() {
   return (
     <div>
       <button
-        className="bg-white text-white hover:bg-gray-200 transition-all px-6 py-2 rounded-full text-sm font-bold active:scale-95"
+        className="font-bold bg-white text-white hover:bg-gray-200 transition-all px-6 py-2 rounded-full text-sm font-bold active:scale-95"
         aria-describedby={id}
         onClick={handleClick}
       >
-        QR Men Laper
+        <p className="font-bold"> QR Men</p>
       </button>
       <Popover
         id={id}

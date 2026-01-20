@@ -27,7 +27,7 @@ const FloatingHeader = () => {
       }`}
     >
       <div
-        className={`w-full max-w-5xl transition-all duration-300 flex items-center justify-between px-6 border border-white/10 shadow-2xl ${
+        className={`w-full  max-w-5xl transition-all duration-300 flex items-center justify-between px-6 border border-white/10 shadow-2xl ${
           isScrolled
             ? "h-14 bg-[#0d0d0d]/60 backdrop-blur-lg rounded-full mx-4"
             : "h-16 bg-[#0d0d0d]/60 backdrop-blur-lg rounded-full"
