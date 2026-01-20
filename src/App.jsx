@@ -9,7 +9,7 @@ const App = () => {
       author: "PhaseConvoluti...",
       stats: "< 100",
       image: "URL_GAMBAR_1",
-      audioSrc: "public/audio/getout.mp3",
+      audioSrc: "/audio/getout.mp3",
       shortcutKey: "q",
     },
     {
@@ -18,7 +18,7 @@ const App = () => {
       author: "PhaseConvoluti...",
       stats: "< 100",
       image: "URL_GAMBAR_2",
-      audioSrc: "public/audio/hell-na.mp3",
+      audioSrc: "/audio/hell-na.mp3",
       shortcutKey: "w",
     },
     {
@@ -27,7 +27,7 @@ const App = () => {
       author: "p0tas51um",
       stats: "126",
       image: "URL_GAMBAR_3",
-      audioSrc: "public/audio/myinstants.mp3",
+      audioSrc: "/audio/myinstants.mp3",
       shortcutKey: "e",
     },
     {
@@ -36,7 +36,7 @@ const App = () => {
       author: "PreampOctaveD...",
       stats: "< 100",
       image: "URL_GAMBAR_1",
-      audioSrc: "public/audio/myinstants-3.mp3",
+      audioSrc: "/audio/myinstants-3.mp3",
       shortcutKey: "r",
     },
     {
@@ -45,7 +45,7 @@ const App = () => {
       author: "PhaseConvoluti...",
       stats: "< 100",
       image: "URL_GAMBAR_2",
-      audioSrc: "public/audio/myinstants-3.mp3",
+      audioSrc: "/audio/myinstants-3.mp3",
       shortcutKey: "t",
     },
     {
