@@ -89,7 +89,9 @@ const App = () => {
   return (
     <div>
       <DotBackground>
-        <h1 className=" text-center font-bold">Sound Board</h1>
+        <h3 className=" text-center font-bold">
+          _______________________________________________________________________________________________________________
+        </h3>
         <div className="min-h-screen p-10 flex gap-6 flex-wrap justify-center">
           <FloatingHeader></FloatingHeader>
           {data.map((item) => (
