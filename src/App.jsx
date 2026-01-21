@@ -27,7 +27,7 @@ const App = () => {
       author: "p0tas51um",
       stats: "126",
       image: "URL_GAMBAR_3",
-      audioSrc: "/audio/myinstants.mp3",
+      audioSrc: "/audio/FAH-with-shotgun.mp3",
       shortcutKey: "e",
     },
     {
@@ -45,7 +45,7 @@ const App = () => {
       author: "PhaseConvoluti...",
       stats: "< 100",
       image: "URL_GAMBAR_2",
-      audioSrc: "/audio/myinstants-3.mp3",
+      audioSrc: "/audio/myinstants-2.mp3",
       shortcutKey: "t",
     },
     {
@@ -54,7 +54,7 @@ const App = () => {
       author: "p0tas51um",
       stats: "126",
       image: "URL_GAMBAR_3",
-      audioSrc: "public/audio/myinstants-3.mp3",
+      audioSrc: "audio/Baahlil-Ngolah.mp3",
       shortcutKey: "y",
     },
     {
