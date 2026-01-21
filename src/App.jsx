@@ -23,7 +23,7 @@ const App = () => {
     },
     {
       id: 3,
-      title: "Mas Anies Mas A...",
+      title: "FAHHHH",
       author: "p0tas51um",
       stats: "126",
       image: "/image/fahh.png",
@@ -50,7 +50,7 @@ const App = () => {
     },
     {
       id: 6,
-      title: "6",
+      title: "Bahlil Ngolaah",
       author: "p0tas51um",
       stats: "126",
       image: "image/Bahlil.jpg",
