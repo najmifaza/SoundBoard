@@ -75,6 +75,15 @@ const App = () => {
       audioSrc: "audio/izin.mp3",
       shortcutKey: "d",
     },
+    {
+      id: 2,
+      title: "Coin",
+      author: "PhaseConvoluti...",
+      stats: "< 100",
+      image: "image/coin.png",
+      audioSrc: "audio/money-soundfx.mp3",
+      shortcutKey: "d",
+    },
   ];
 
   return (
