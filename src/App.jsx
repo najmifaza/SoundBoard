@@ -55,7 +55,7 @@ const App = () => {
       stats: "126",
       image: "URL_GAMBAR_3",
       audioSrc: "audio/Baahlil-Ngolah.mp3",
-      shortcutKey: "y",
+      shortcutKey: "a",
     },
     {
       id: 7,
@@ -63,6 +63,8 @@ const App = () => {
       author: "PreampOctaveD...",
       stats: "< 100",
       image: "URL_GAMBAR_1",
+      audioSrc: "audio/Baahlil-Ngolah.mp3",
+      shortcutKey: "s",
     },
     {
       id: 2,
@@ -102,23 +104,26 @@ const App = () => {
   ];
 
   return (
-    <DotBackground>
-      <h1 className=" text-center font-bold">Sound Board</h1>
-      <div className="min-h-screen p-10 flex gap-6 flex-wrap justify-center">
-        <FloatingHeader></FloatingHeader>
-        {data.map((item) => (
-          <MusicCard
-            key={item.id}
-            title={item.title}
-            author={item.author}
-            stats={item.stats}
-            imageUrl={item.image}
-            audioSrc={item.audioSrc}
-            shortcutKey={item.shortcutKey}
-          />
-        ))}
-      </div>
-    </DotBackground>
+    <div>
+      <DotBackground>
+        <h1 className=" text-center font-bold">Sound Board</h1>
+        <div className="min-h-screen p-10 flex gap-6 flex-wrap justify-center">
+          <FloatingHeader></FloatingHeader>
+          {data.map((item) => (
+            <MusicCard
+              key={item.id}
+              title={item.title}
+              author={item.author}
+              stats={item.stats}
+              imageUrl={item.image}
+              audioSrc={item.audioSrc}
+              shortcutKey={item.shortcutKey}
+            />
+          ))}
+        </div>
+      </DotBackground>
+      <footer className="bg-black h-15"></footer>
+    </div>
   );
 };
 
