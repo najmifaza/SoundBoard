@@ -75,34 +75,6 @@ const App = () => {
       audioSrc: "audio/izin.mp3",
       shortcutKey: "d",
     },
-    {
-      id: 3,
-      title: "Mas Anies Mas A...",
-      author: "p0tas51um",
-      stats: "126",
-      image: "URL_GAMBAR_3",
-    },
-    {
-      id: 1,
-      title: "anies bigmo GAK ...",
-      author: "PreampOctaveD...",
-      stats: "< 100",
-      image: "URL_GAMBAR_1",
-    },
-    {
-      id: 2,
-      title: "siap mas anies",
-      author: "PhaseConvoluti...",
-      stats: "< 100",
-      image: "URL_GAMBAR_2",
-    },
-    {
-      id: 3,
-      title: "Mas Anies Mas A...",
-      author: "p0tas51um",
-      stats: "126",
-      image: "URL_GAMBAR_3",
-    },
   ];
 
   return (
