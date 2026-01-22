@@ -1,6 +1,7 @@
 import MusicCard from "./components/card";
 import FloatingHeader from "./components/header";
 import DotBackground from "./components/dotBG";
+import Footer from "./components/Footer";
 const App = () => {
   const data = [
     {
@@ -82,16 +83,14 @@ const App = () => {
       stats: "< 100",
       image: "image/coin.png",
       audioSrc: "audio/money-soundfx.mp3",
-      shortcutKey: "d",
+      shortcutKey: "f",
     },
   ];
 
   return (
     <div>
       <DotBackground>
-        <h3 className=" text-center font-bold">
-          _______________________________________________________________________________________________________________
-        </h3>
+        <h3 className=" text-center font-bold"></h3>
         <div className="min-h-screen p-10 flex gap-6 flex-wrap justify-center">
           <FloatingHeader></FloatingHeader>
           {data.map((item) => (
@@ -107,7 +106,7 @@ const App = () => {
           ))}
         </div>
       </DotBackground>
-      <footer className="bg-black h-15"></footer>
+      <Footer />
     </div>
   );
 };
