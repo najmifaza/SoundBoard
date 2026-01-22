@@ -1,4 +1,3 @@
-
 # 🎵 NiceGuy SoundBoard
 
 **NiceGuy SoundBoard** adalah aplikasi web interaktif sederhana yang memungkinkan pengguna memutar berbagai efek suara meme populer secara instan. Dibangun menggunakan React dan Vite dengan styling modern menggunakan Tailwind CSS.
