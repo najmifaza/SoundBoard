@@ -1,16 +1,115 @@
-# React + Vite
+# 🎵 NiceGuy SoundBoard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NiceGuy SoundBoard** adalah aplikasi web interaktif sederhana yang memungkinkan pengguna memutar berbagai efek suara meme populer secara instan. Dibangun menggunakan React dan Vite dengan styling modern menggunakan Tailwind CSS.
 
-Currently, two official plugins are available:
+Proyek ini dirancang untuk kecepatan dan kemudahan penggunaan, mendukung pemutaran audio melalui klik tombol maupun **shortcut keyboard**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Fitur Utama
 
-## React Compiler
+* **Pemutaran Audio Instan**: Memutar klip audio pendek (meme sounds) tanpa delay.
+* **Keyboard Shortcuts**: Tekan tombol keyboard tertentu untuk memutar suara tanpa harus mengklik (Keybinds tersedia di bawah).
+* **Visualisasi Audio**: Efek animasi bar sederhana pada kartu saat audio sedang diputar.
+* **Desain Responsif**: Tampilan grid yang rapi dengan Tailwind CSS.
+* **Manajemen Playback**: Fitur *toggle* (Play/Pause) dan reset otomatis saat audio diputar ulang.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Teknologi yang Digunakan
 
-## Expanding the ESLint configuration
+Proyek ini dibangun menggunakan stack teknologi modern:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **[React](https://react.dev/)** (v19) - Library UI utama.
+* **[Vite](https://vitejs.dev/)** - Build tool yang cepat untuk pengembangan frontend.
+* **[Tailwind CSS](https://tailwindcss.com/)** (v4) - Framework CSS utility-first untuk styling.
+* **[Lucide React](https://lucide.dev/)** - Koleksi ikon yang ringan dan fleksibel.
+* **Framer Motion / CSS Animation** - Untuk efek visual pada kartu suara.
+
+## 🎹 Daftar Shortcut Keyboard
+
+Anda dapat menggunakan tombol berikut pada keyboard untuk memutar suara secara cepat:
+
+| Tombol (Key) | Nama Suara / Judul | Deskripsi Singkat |
+| :---: | :--- | :--- |
+| **Q** | Get Out | Efek suara "Get Out" |
+| **W** | Oh Hell Nah | Efek suara viral "Oh Hell Nah" |
+| **E** | FAHHHH | Efek suara teriak |
+| **R** | 4 (China) | Meme suara |
+| **T** | 5 | Meme suara instan |
+| **A** | Bahlil Ngolaah | Suara Bahlil |
+| **S** | Lagu Kebangsaan | Bigmo sound |
+| **D** | Iziiiin / Coin | Efek suara Izin atau Koin |
+
+> **Catatan:** Pastikan keyboard Anda dalam mode input bahasa Inggris (US) standar agar keybind berfungsi dengan baik.
+
+## 📂 Struktur Proyek
+
+```text
+soundboard/
+├── public/
+│   ├── audio/       # File audio (.mp3)
+│   └── image/       # Aset gambar untuk kartu
+├── src/
+│   ├── components/
+│   │   ├── card.tsx         # Komponen kartu musik & logika audio
+│   │   ├── header.tsx       # Header melayang
+│   │   ├── dotBG.tsx        # Latar belakang bermotif dot
+│   │   └── ...
+│   ├── App.jsx              # Komponen utama & data mapping
+│   ├── main.jsx             # Entry point aplikasi
+│   └── index.css            # Import Tailwind CSS
+├── package.json
+└── vite.config.js
+
+```
+
+## 🚀 Cara Menjalankan (Instalasi)
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal Anda:
+
+### 1. Clone Repositori
+
+```bash
+git clone [https://github.com/najmifaza/soundboard.git](https://github.com/najmifaza/soundboard.git)
+cd soundboard
+
+```
+
+### 2. Install Dependencies
+
+Pastikan Anda sudah menginstall [Node.js](https://nodejs.org/). Gunakan `npm` atau `pnpm` (disarankan jika ada `pnpm-lock.yaml`).
+
+```bash
+npm install
+# atau
+pnpm install
+
+```
+
+### 3. Jalankan Mode Development
+
+```bash
+npm run dev
+# atau
+pnpm dev
+
+```
+
+Buka browser dan akses alamat yang muncul di terminal (biasanya `http://localhost:5173`).
+
+### 4. Build untuk Production
+
+Jika ingin men-deploy aplikasi:
+
+```bash
+npm run build
+
+```
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima! Jika Anda ingin menambahkan suara baru atau fitur lain:
+
+1. Fork repositori ini.
+2. Buat branch fitur baru (`git checkout -b fitur-keren`).
+3. Commit perubahan Anda (`git commit -m 'Menambah suara baru'`).
+4. Push ke branch (`git push origin fitur-keren`).
+5. Buat Pull Request.
+
